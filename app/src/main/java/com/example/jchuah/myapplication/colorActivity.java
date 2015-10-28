@@ -4,6 +4,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Toast;
 
 public class colorActivity extends AppCompatActivity {
 
@@ -11,6 +13,7 @@ public class colorActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kulur);
+        
     }
 
     @Override
@@ -19,7 +22,9 @@ public class colorActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.menu_color, menu);
         return true;
     }
-
+    public void onKulurClick(View button){
+        Toast.makeText(getApplicationContext(), "I like Toast. Where's the butter?", Toast.LENGTH_LONG).show();
+    }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will

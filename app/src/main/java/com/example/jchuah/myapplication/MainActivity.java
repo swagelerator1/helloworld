@@ -1,21 +1,29 @@
 package com.example.jchuah.myapplication;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
+    Bundle sendBundle = new Bundle();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
     public void onNextClick(View source){
-        Toast.makeText(getApplicationContext(), "buddonzezezez", Toast.LENGTH_LONG ).show();
+        Intent colorActivityIntent = new Intent(this, colorActivity.class);
+        EditText e = (EditText)findViewById(R.id.userName);
+        sendBundle.putString("name", e.getText().toString());
+        colorActivityIntent.putExtra("groceries", sendBundle);
+        startActivity(colorActivityIntent);
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
