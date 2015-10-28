@@ -17,7 +17,7 @@
         android:inputType="textPersonName"
         android:text="Name"
         android:ems="10"
-        android:id="@+id/editText"
+        android:id="@+id/userName"
         android:layout_marginTop="55dp" />
 
     <Button
@@ -25,7 +25,7 @@
         android:layout_height="wrap_content"
         android:text="@string/klik"
         android:id="@+id/button"
-        android:layout_below="@+id/editText"
+        android:layout_below="@+id/userName"
         android:layout_marginTop="49dp"
         android:typeface="serif"
         android:onClick="onNextClick" />
@@ -36,8 +36,8 @@
         android:text="@string/helloname"
         android:id="@+id/textView"
         android:layout_alignParentTop="true"
-        android:layout_alignRight="@+id/editText"
-        android:layout_alignEnd="@+id/editText"
+        android:layout_alignRight="@+id/userName"
+        android:layout_alignEnd="@+id/userName"
         android:textIsSelectable="true" />
 
 </RelativeLayout>
