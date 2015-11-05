@@ -21,7 +21,7 @@ public class colorActivity extends AppCompatActivity {
         Button colorButton = (Button)source;
         ColorDrawable bgColor = (ColorDrawable)source.getBackground();
 
-        groceries.putInt("colorclick", bgColor.getColor());
+        groceries.putInt("colorClick", bgColor.getColor());
 
         startActivity(nameAndColorIntent);
     }

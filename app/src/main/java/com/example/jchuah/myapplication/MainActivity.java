@@ -8,23 +8,29 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    Bundle sendBundle = new Bundle();
+    static String tag = "com.example.jchuah.myapplication.MainActivity";
+
+
+    Bundle groceryBundle = new Bundle();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-    public void onNextClick(View source){
-        Intent colorActivityIntent = new Intent(this, colorActivity.class);
-        EditText e = (EditText)findViewById(R.id.userName);
-        sendBundle.putString("name", e.getText().toString());
-        colorActivityIntent.putExtra("groceries", sendBundle);
-        startActivity(colorActivityIntent);
+
+    public void onNextClick(View source) {
+        Log.i(tag, "Launching Color Activity");
+        Intent colorActivityIntent = new Intent(this, colorActivity.class); // #1a
+        EditText e = (EditText)findViewById(R.id.userName); // #3
+        groceryBundle.putString("name", e.getText().toString()); // #2b
+        colorActivityIntent.putExtra("groceries", groceryBundle);// #2a
+        startActivity(colorActivityIntent); //#1b
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.

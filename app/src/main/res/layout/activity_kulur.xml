@@ -24,15 +24,6 @@
             android:layout_height="match_parent">
 
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/klik"
-                android:id="@+id/button2"
-                android:layout_gravity="center_horizontal"
-                android:layout_row="1"
-                android:layout_column="7" />
-
-            <Button
                 style="?android:attr/buttonStyleSmall"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -42,7 +33,7 @@
                 android:layout_gravity="center_horizontal"
                 android:background="#ffff00"
                 android:text="Yellow"
-                android:onClick="onKulurClick" />
+                android:onClick="onColorClick" />
 
             <Button
                 style="?android:attr/buttonStyleSmall"
@@ -54,7 +45,7 @@
                 android:layout_column="1"
                 android:layout_gravity="center_horizontal"
                 android:background="#00ffff"
-                android:onClick="onKulurClick" />
+                android:onClick="onColorClick" />
 
             <Button
                 style="?android:attr/buttonStyleSmall"
@@ -66,7 +57,7 @@
                 android:layout_column="4"
                 android:layout_gravity="center_horizontal"
                 android:background="#ff00ff"
-                android:onClick="onKulurClick" />
+                android:onClick="onColorClick" />
 
             <Button
                 style="?android:attr/buttonStyleSmall"
@@ -78,7 +69,7 @@
                 android:layout_column="3"
                 android:layout_gravity="center_horizontal"
                 android:background="#ffffff"
-                android:onClick="onKulurClick" />
+                android:onClick="onColorClick" />
 
             <Button
                 style="?android:attr/buttonStyleSmall"
@@ -90,7 +81,7 @@
                 android:layout_column="5"
                 android:layout_gravity="center_horizontal"
                 android:background="#00ff00"
-                android:onClick="onKulurClick" />
+                android:onClick="onColorClick" />
 
             <Button
                 style="?android:attr/buttonStyleSmall"
@@ -102,7 +93,7 @@
                 android:layout_column="1"
                 android:layout_gravity="center_horizontal"
                 android:background="#ff0000"
-                android:onClick="onKulurClick" />
+                android:onClick="onColorClick" />
 
             <Button
                 style="?android:attr/buttonStyleSmall"
@@ -114,7 +105,7 @@
                 android:layout_column="4"
                 android:layout_gravity="center_horizontal"
                 android:background="#0000ff"
-                android:onClick="onKulurClick" />
+                android:onClick="onColorClick" />
 
             <Button
                 style="?android:attr/buttonStyleSmall"
@@ -127,7 +118,7 @@
                 android:layout_gravity="center_horizontal"
                 android:background="#010101"
                 android:textColor="#ffffff"
-                android:onClick="onKulurClick" />
+                android:onClick="onColorClick" />
 
             <Button
                 style="?android:attr/buttonStyleSmall"
@@ -140,7 +131,7 @@
                 android:layout_gravity="center_horizontal"
                 android:background="#574600"
                 android:textColor="#ffffff"
-                android:onClick="onKulurClick" />
+                android:onClick="onColorClick" />
         </TableLayout>
 
     </GridLayout>
