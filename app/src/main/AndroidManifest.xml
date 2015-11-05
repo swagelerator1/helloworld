@@ -24,6 +24,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.jchuah.myapplication.MainActivity" />
         </activity>
+        <activity
+            android:name=".NameAndColorActivity"
+            android:label="@string/title_activity_name_and_color"
+            android:parentActivityName=".colorActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.jchuah.myapplication.colorActivity" />
+        </activity>
     </application>
 
 </manifest>
