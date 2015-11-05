@@ -22,6 +22,7 @@ public class NameAndColorActivity extends AppCompatActivity {
         TextView colorful_name_textview = (TextView)findViewById(R.id.colorful_name); // find the component #3a
         colorful_name_textview.setText(name); // modify the component with the value #3b
         colorful_name_textview.setTextColor(groceries.getInt("colorClick"));
+        colorful_name_textview.setTextSize(30);
     }
 
     @Override
